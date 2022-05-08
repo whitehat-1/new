@@ -7,10 +7,10 @@ ENV PYTHONDONTWRITEBYTECODE=1
 RUN apt-get update
 
 # Set working directory
-WORKDIR /twitter
+WORKDIR /new2
 
 # copy requirements files
-COPY ./requirements.txt /twitter/requirements.txt
+COPY ./requirements.txt /new2/requirements.txt
 
 # install requirements
 RUN pip install -r requirements.txt
