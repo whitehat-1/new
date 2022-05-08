@@ -2,7 +2,7 @@ from tortoise import fields
 from tortoise.models import Model
 
 
-class Tasklist(Model):
+class Task(Model):
     task_id = fields.UUIDField(pk=True)
     Property = fields.CharField(max_length=400)
     description = fields.CharField(max_length=400)
