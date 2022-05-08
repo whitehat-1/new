@@ -7,5 +7,4 @@ class Tasklist(Model):
     property= fields.CharField(max_length=400)
     description = fields.CharField(max_length=400)
     created_at = fields.DatetimeField(auto_now_add=True)
-    updated_at = fields.DatetimeField(auto_now=True)
 
