@@ -8,7 +8,6 @@ class Taskpublic(BaseModel):
     Property: str
     description: str
     created_at: datetime
-    updated_at: datetime
 
 
 class TaskCreate(BaseModel):

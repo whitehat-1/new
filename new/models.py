@@ -8,4 +8,3 @@ class Task(Model):
     description = fields.CharField(max_length=400)
     date_created_at = fields.DatetimeField(auto_now_add=True)
     complete_task = fields.BooleanField(default=False)
-
