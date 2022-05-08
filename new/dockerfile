@@ -10,7 +10,7 @@ RUN apt-get update
 WORKDIR /new
 
 # copy requirements files
-COPY ./requirements.txt /new2/requirements.txt
+COPY ./requirements.txt /new/requirements.txt
 
 # install requirements
 RUN pip install -r requirements.txt
