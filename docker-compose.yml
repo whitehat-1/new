@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  twitter:
+  project:
     build:
       context: ./new
       dockerfile: Dockerfile
