@@ -3,7 +3,7 @@ from typing import List
 from fastapi import FastAPI
 
 from database import create_start_app_handler
-from models import Student
+from models import Tasklist
 from schema import TaskCreate, Taskpublic
 
 def get_application():
