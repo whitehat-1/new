@@ -7,7 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 RUN apt-get update
 
 # Set working directory
-WORKDIR /new2
+WORKDIR /new
 
 # copy requirements files
 COPY ./requirements.txt /new2/requirements.txt
@@ -16,13 +16,13 @@ COPY ./requirements.txt /new2/requirements.txt
 RUN pip install -r requirements.txt
 
 # Copy codebase
-COPY . /new2/
+COPY . /new/
 
 # create new user
 RUN adduser --disabled-password --gecos '' jerry
 
 # Set user as the owner of directory
-RUN chown -R jerry:jerry /new2
+RUN chown -R jerry:jerry /new
 
 # Set user to be jerry
 USER jerry
