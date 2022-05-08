@@ -19,13 +19,13 @@ def get_application():
 app = get_application()
 
 
-@app.post("/", response_model=Taskpublic)
+@app.post("create_task/", response_model=Taskpublic)
 async def home(data: TaskCreate):
     Task = await Task.create(
         **data.dict(exclude_unset=True)
     )
-    return student
+    return Task
 
-@app.get("/", response_model=List[Taskpublic])
+@app.get("/tasks", response_model=List[Taskpublic])
 async def home(data: TaskCreate):
-    return await Task.all()
+    return await Task.all() 
