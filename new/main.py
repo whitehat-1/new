@@ -22,7 +22,7 @@ app = get_application()
 @app.post("create_task/", response_model=Taskpublic)
 async def home(data: TaskCreate):
     Task = await Task.create(
-        **data.dict(exclude_unset=True)
+        **data.dict(exclude_unset=True) #convert a pydantic model to a dictionary
     )
     return Task
 
