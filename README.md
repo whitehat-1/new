@@ -1,1 +1,1 @@
-# new
+#  a new task with a title property, a description, a date created, and a boolean determining whether the task has been completed. A new unique id should be created for each new task
