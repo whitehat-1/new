@@ -16,7 +16,7 @@ services:
     depends_on:
       - db
     restart: "on-failure"
- 
+
   db:
     image: postgres:12.1-alpine
     volumes:
@@ -26,17 +26,6 @@ services:
     ports:
       - 5433:5432
     restart: "on-failure"
-  
-  redis:
-    image: "redis:latest"
-    expose:
-      - 6379
-    working_dir: /data
-    volumes:
-      - redis_data:/data
-    restart: "on-failure"
 
 volumes:
     postgres_data:
-    
-
