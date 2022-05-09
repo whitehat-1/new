@@ -1,3 +1,4 @@
+# pull the docker image
 FROM python:3.10.1
 
 ENV PYTHONUNBUFFERED=1
@@ -26,3 +27,12 @@ RUN chown -R jerry:jerry /new
 
 # Set user to be jerry
 USER jerry
+
+
+
+
+
+
+
+
+
